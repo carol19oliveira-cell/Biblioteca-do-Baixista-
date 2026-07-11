@@ -166,7 +166,7 @@ export default function App() {
               <div className="h-full w-full bg-brand-dark rounded-2xl overflow-hidden relative">
                 <img
                   src="https://i.ibb.co/M56845tH/IMG-1331.webp"
-                  alt="Pack de Frases Cover Art"
+                  alt="Biblioteca de Frases Cover Art"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -186,7 +186,7 @@ export default function App() {
                 onClick={handleScrollToOffer}
                 className="px-8 py-4 rounded-xl bg-gradient-to-r from-brand-orange to-brand-amber font-extrabold text-white text-sm tracking-wide uppercase hover:opacity-90 transition-all cursor-pointer flex items-center justify-center gap-2 shadow-lg shadow-brand-orange/25 group"
               >
-                Garantir Meu Pack
+                Garantir Minha Biblioteca
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </button>
             </div>

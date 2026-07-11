@@ -362,7 +362,7 @@ export default function CheckoutModal({ isOpen, onClose, price }: CheckoutModalP
                       Acesso Liberado! 🎸
                     </h3>
                     <p className="text-sm text-slate-300 px-4">
-                      Olá <strong>{name}</strong>, seu pagamento de R$ {price.toFixed(2).replace(".", ",")} foi aprovado. O material do seu <strong>Pack de Frases</strong> já foi enviado.
+                      Olá <strong>{name}</strong>, seu pagamento de R$ {price.toFixed(2).replace(".", ",")} foi aprovado. O material da sua <strong>Biblioteca de Frases</strong> já foi enviado.
                     </p>
                   </div>
 
