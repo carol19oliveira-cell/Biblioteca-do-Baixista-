@@ -1,0 +1,6 @@
+{
+  "name": "Página de Vendas - Pack de Frases",
+  "description": "Uma página de vendas de alta conversão para o Pack de Frases de Pagode no Baixo, com uma paleta de cores moderna em tons de dark obsidian e âmbar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
