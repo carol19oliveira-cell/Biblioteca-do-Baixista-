@@ -14,7 +14,7 @@ export interface BenefitCard {
   title: string;
   description: string;
   label: string;
-  iconName: "music" | "hash" | "fileText" | "zap" | "layers" | "clock" | "flame" | "sliders" | "target";
+  iconName: "music" | "hash" | "fileText" | "zap" | "layers" | "clock" | "flame" | "sliders" | "target" | "lock";
 }
 
 export interface PurchaseNotification {

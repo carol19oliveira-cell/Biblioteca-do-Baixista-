@@ -67,6 +67,13 @@ const benefitsData: BenefitCard[] = [
     description: "Após a confirmação do pagamento, você recebe acesso imediato à biblioteca diretamente no seu e-mail.",
     label: "Acesso Vitalício",
     iconName: "clock"
+  },
+  {
+    id: "membros",
+    title: "ÁREA DE MEMBROS EXCLUSIVA",
+    description: "Assista às aulas das frases e acesse todos os materiais organizados em um portal moderno, seguro e interativo.",
+    label: "Área de Membros",
+    iconName: "lock"
   }
 ];
 
@@ -113,6 +120,7 @@ export default function App() {
       case "layers": return <Layers {...props} />;
       case "clock": return <Clock {...props} />;
       case "target": return <Target {...props} />;
+      case "lock": return <Lock {...props} />;
       default: return <Music {...props} />;
     }
   };
@@ -387,6 +395,7 @@ export default function App() {
               <div className="pt-6 pb-4 border-t border-white/[0.05] text-left max-w-xs md:max-w-sm mx-auto space-y-2.5">
                 {[
                   "Biblioteca de Frases para Contrabaixo",
+                  "Acesso à Área de Membros",
                   "Frases Musicais",
                   "Frases de Impacto",
                   "Frases Rítmicas",
