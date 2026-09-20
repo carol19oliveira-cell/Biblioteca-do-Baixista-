@@ -25,7 +25,9 @@ import {
 } from "lucide-react";
 
 // @ts-ignore
-import packCover from "./assets/images/pack_cover_art_1783708433651.jpg";
+import packCover from "./assets/images/cover.webp";
+// @ts-ignore
+import demoCover from "./assets/images/demo.webp";
 import VideoPlayerMock from "./components/VideoPlayerMock";
 import FaqSection from "./components/FaqSection";
 import SocialProofToast from "./components/SocialProofToast";
@@ -173,9 +175,17 @@ export default function App() {
             <div className="absolute inset-0 bg-gradient-to-tr from-brand-orange/40 via-white/5 to-brand-amber/40 rounded-2xl p-[1px]">
               <div className="h-full w-full bg-brand-dark rounded-2xl overflow-hidden relative">
                 <img
-                  src="https://i.ibb.co/M56845tH/IMG-1331.webp"
+                  src={packCover || "/images/cover.webp"}
                   alt="Biblioteca de Frases Cover Art"
-                  referrerPolicy="no-referrer"
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (target.src !== window.location.origin + "/images/cover.webp") {
+                      target.src = "/images/cover.webp";
+                    }
+                  }}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 pointer-events-none" />
@@ -214,9 +224,16 @@ export default function App() {
             {/* Glowing border effect */}
             <div className="absolute inset-0 bg-gradient-to-tr from-brand-orange to-brand-amber rounded-2xl blur opacity-10 group-hover:opacity-20 transition-opacity duration-300 pointer-events-none" />
             <img
-              src="https://i.ibb.co/rG1vJppw/Chat-GPT-Image-10-de-jul-de-2026-16-21-13.webp"
+              src={demoCover || "/images/demo.webp"}
               alt="Frases de Exemplo"
-              referrerPolicy="no-referrer"
+              loading="lazy"
+              decoding="async"
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (target.src !== window.location.origin + "/images/demo.webp") {
+                  target.src = "/images/demo.webp";
+                }
+              }}
               className="w-full h-auto object-cover rounded-2xl relative z-10 transition-transform duration-500 hover:scale-[1.01]"
             />
           </div>
