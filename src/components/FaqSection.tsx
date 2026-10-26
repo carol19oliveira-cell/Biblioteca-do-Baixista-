@@ -10,19 +10,24 @@ import { FAQItem } from "../types";
 
 const faqData: FAQItem[] = [
   {
+    id: "tablatura",
+    question: "O material tem tablatura?",
+    answer: "Sim! Todas as frases contam com tablatura detalhada para você visualizar exatamente cada casa, nota e digitação com facilidade no baixo, sem precisar saber ler partitura tradicional."
+  },
+  {
     id: "iniciante",
     question: "Serve para iniciante?",
-    answer: "Sim. Se você já toca o básico no baixo, domina a postura de apoio e consegue segurar uma levada padrão, você já consegue colher o resultado imediato das frases."
+    answer: "Sim. Se você já toca o básico no baixo, domina a postura de apoio e consegue segurar uma levada padrão, você já consegue colher o resultado imediato das frases com a ajuda das tablaturas e versões lentas."
   },
   {
     id: "acesso",
     question: "Como e quando recebo o acesso?",
-    answer: "O acesso é imediato! Assim que o seu pagamento for confirmado (o pagamento via Pix é aprovado em menos de 1 minuto), você receberá um e-mail com o link de acesso exclusivo a toda a nossa plataforma com as videoaulas e materiais em PDF para download."
+    answer: "O acesso é imediato! Assim que o seu pagamento for confirmado (o pagamento via Pix é aprovado em menos de 1 minuto), você receberá um e-mail com o link de acesso exclusivo a toda a nossa plataforma com as videoaulas, tablaturas e materiais em PDF para download."
   },
   {
     id: "vitalicio",
     question: "O acesso é vitalício?",
-    answer: "Com certeza! Você paga apenas uma vez e tem acesso para sempre. Pode baixar o material PDF quantas vezes precisar e assistir aos vídeos explicativos no seu próprio ritmo, sem prazos, vencimentos ou cobranças adicionais."
+    answer: "Com certeza! Você paga apenas uma vez e tem acesso para sempre. Pode baixar o material PDF com as tablaturas quantas vezes precisar e assistir aos vídeos explicativos no seu próprio ritmo, sem prazos, vencimentos ou cobranças adicionais."
   }
 ];
 

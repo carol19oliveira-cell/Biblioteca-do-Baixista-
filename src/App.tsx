@@ -32,6 +32,7 @@ import VideoPlayerMock from "./components/VideoPlayerMock";
 import FaqSection from "./components/FaqSection";
 import SocialProofToast from "./components/SocialProofToast";
 import CheckoutModal from "./components/CheckoutModal";
+import SocialProofSection from "./components/SocialProofSection";
 import { BenefitCard } from "./types";
 
 const benefitsData: BenefitCard[] = [
@@ -57,6 +58,13 @@ const benefitsData: BenefitCard[] = [
     iconName: "target"
   },
   {
+    id: "tablaturas",
+    title: "TABLATURAS COMPLETAS",
+    description: "Todas as frases contam com tablatura detalhada para você visualizar exatamente cada casa, nota e digitação no contrabaixo.",
+    label: "Material em PDF",
+    iconName: "fileText"
+  },
+  {
     id: "versoes",
     title: "TRÊS VERSÕES DE ESTUDO",
     description: "Cada frase acompanha:\n\n• Playback para ouvir a aplicação musical.\n• Metrônomo para entender o tempo exato da entrada.\n• Versão lenta para facilitar o aprendizado.",
@@ -64,17 +72,10 @@ const benefitsData: BenefitCard[] = [
     iconName: "sliders"
   },
   {
-    id: "acesso",
-    title: "ACESSO IMEDIATO",
-    description: "Após a confirmação do pagamento, você recebe acesso imediato à biblioteca diretamente no seu e-mail.",
-    label: "Acesso Vitalício",
-    iconName: "clock"
-  },
-  {
     id: "membros",
     title: "ÁREA DE MEMBROS EXCLUSIVA",
-    description: "Assista às aulas das frases e acesse todos os materiais organizados em um portal moderno, seguro e interativo.",
-    label: "Área de Membros",
+    description: "Assista às aulas das frases e acesse todos os materiais organizados em um portal moderno com liberação imediata no seu e-mail.",
+    label: "Acesso Imediato",
     iconName: "lock"
   }
 ];
@@ -245,7 +246,7 @@ export default function App() {
           
           <div className="text-center space-y-2">
             <span className="text-xs font-mono uppercase tracking-[0.25em] text-brand-orange">
-              Vídeos + suporte whatsapp
+              Vídeos + Tablaturas + Suporte WhatsApp
             </span>
             <h2 className="text-4xl md:text-5xl font-display font-extrabold italic tracking-tight text-white uppercase">
               O que você <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-brand-amber px-2">recebe</span>
@@ -290,13 +291,18 @@ export default function App() {
           </div>
         </section>
 
+        {/* ================= SOCIAL PROOF SECTION (PRINTS REAIS) ================= */}
+        <div className="!mt-8 md:!mt-12">
+          <SocialProofSection />
+        </div>
+
         {/* ================= WHY STUDY PHRASES SECTION ================= */}
         <motion.section 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="py-16 md:py-24 relative z-10 border-t border-b border-white/[0.04] overflow-hidden w-full bg-gradient-to-b from-brand-dark via-brand-orange/[0.04] to-brand-dark"
+          className="!mt-4 md:!mt-6 py-10 md:py-16 relative z-10 border-t border-b border-white/[0.04] overflow-hidden w-full bg-gradient-to-b from-brand-dark via-brand-orange/[0.04] to-brand-dark"
         >
           {/* Subtle background ambient glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] ambient-glow-orange pointer-events-none opacity-10 blur-3xl" />
@@ -412,6 +418,7 @@ export default function App() {
               <div className="pt-6 pb-4 border-t border-white/[0.05] text-left max-w-xs md:max-w-sm mx-auto space-y-2.5">
                 {[
                   "Biblioteca de Frases para Contrabaixo",
+                  "Tablaturas completas de todas as frases",
                   "Acesso à Área de Membros",
                   "Frases Musicais",
                   "Frases de Impacto",

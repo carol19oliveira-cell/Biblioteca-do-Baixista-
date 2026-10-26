@@ -111,7 +111,7 @@ export default function CheckoutModal({ isOpen, onClose, price }: CheckoutModalP
                       Dados de Faturamento & Acesso
                     </h3>
                     <p className="text-xs text-slate-400 mt-1">
-                      Insira os dados corretos para receber as aulas e PDFs no e-mail.
+                      Insira os dados corretos para receber as aulas, tablaturas e materiais no e-mail.
                     </p>
                   </div>
 
